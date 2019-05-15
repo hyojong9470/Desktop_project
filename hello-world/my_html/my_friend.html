@@ -1,0 +1,133 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>see myfrind</title>
+    <style>
+ 
+
+        td, th{
+            border: 2px solid #dddddd;
+            text-align: center;
+            padding: 6px;
+
+        }
+        table#t01 tr:nth-child(odd){
+            background-color: aquamarine;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            width : 100%;
+        }
+        table#t01 {
+            border-collapse: collapse;
+        }
+        table#t02 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-spacing: 20%;
+            padding:5px;
+        
+        }
+
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow: hidden;
+            background-color: #333333
+        }
+
+        li {
+            float: left;
+        }
+
+        li a{
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #111111
+        }
+   
+        .cities {  
+            background-color: black;
+            color: white;
+            margin: 20px;
+            padding: 10px;
+            border-spacing: 3px;
+            border-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <table id="t01">
+        <tr>
+            <th>Name</th>
+            <th>phonenumber</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>이효종</td>
+            <td>010-3120-9470</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>김문영</td>
+            <td>010-7537-3609</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>안홍근</td>
+            <td>010-5015-9408</td>
+            <td>27</td>
+        </tr>
+    </table>
+
+    <table id="t02">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>이효종</td>
+            <td>010</td>
+            <td>3120-9470</td>
+        </tr>
+    </table>
+<div style="background-color:beige">
+    <h2>좋아하는 카페 뭐뭐있어?</h2>
+</div>
+    <!--ul은 unordered list를 의미해-->
+    <ul>
+        <li><a href="www.starbuck.com">starbucks</a></li>
+        <li><a href="www.hollys.com">할리스</a></li>
+        <li><a href="twosomeplace.com">투썸</a></li>
+    </ul>
+
+<br>
+
+
+<p class="cities">나는 그중에서도 할리스24시 카페를 좋아해</p>
+<!--iframe을 뛰울꺼야-->
+
+<iframe src="raspGPIO.jpg" boarder ="5px" style="height:200px;width:300px;" name="tag_GPIO"></iframe>
+
+
+<a href="main.html" target="tag_GPIO">이거누르면 사진 바뀔껄??</a>
+
+<p id="h01"></p>
+<script>
+    document.getElementById("h01").innerHTML="HEY this is echo test";
+</script>
+
+<h2>Using a Relative File Path</h2>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+
+
+</body>
+</html>
