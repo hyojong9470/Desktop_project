@@ -1,6 +1,8 @@
 import webbrowser
 
-url_1 = "www.naver.com"
-url_2 = "www.google.com"
+url_1 = "http://www.naver.com"
+
+
+
+
 webbrowser.open(url_1)
-webbrowser.open(url_2)
