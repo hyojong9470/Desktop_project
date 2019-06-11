@@ -39,25 +39,20 @@
 
     <form method="post">
     <button name="LightON" value="on">LightON</button> 
-    </form>
-
-    <form method="post">
     <button name="LightOFF" value="off">LightOFF</button> 
 
     </form>
+
     <p></p>
 
+   
     <?php
     if (isset($_POST["LightON"])) {
-    exec("sudo python3 /var/www/html/LEDON.py", $output, $var);
-    print_r($output."<br>");
-    print_r($var);
+    exec("sudo python3 /var/www/html/LEDON.py");
     }
 
     if (isset($_POST["LightOFF"])) {
     exec("sudo python3 /var/www/html/LEDOFF.py");
-    print_r($output);
-    print_r($var);
     }
     ?>
    
